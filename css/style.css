@@ -131,3 +131,17 @@ header{
 .fa-twitter{
   font-size: 50px;
 }
+@media(max-width:670px ){
+  .first, .second{
+    height: 50vh;
+  }
+  .third{
+    height: 75vh;
+  }
+  .main-visual h1{
+    font-size: 5rem;
+    position: absolute;
+    top: 13%;
+    left: 250px;
+  }
+}
