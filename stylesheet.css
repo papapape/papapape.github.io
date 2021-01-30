@@ -1,271 +1,133 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
+/* 共通 */
+body, h1, h2, h3, p, ul, div{
   margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 20px;
 }
-
-a {
+.container{
+  height: 100vh;
+  padding: 80px 50px 0 50px;
+  text-align: center;
+}
+.section-title{
+  padding-top: 130px;
+  font-size: 3rem;
+}
+a{
   text-decoration: none;
+  color: black;
 }
-
-.container {
+li{
+  list-style: none;
+}
+/* ヘッダー、トップ */
+header{
+  height: 70px;
   width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(top.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
-}
-
-.top-wrapper h1 {
+  background-color:rgb(255, 255, 255);
   opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
-}
-
-.top-wrapper p {
-  opacity: 0.7;
-  font-size: 16px;
-  margin-bottom: 40px;
-}
-
-.btn-wrapper {
-  text-align: center;
-}
-
-.btn-wrapper p {
-  margin-bottom: 20px;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34,49,52,0.9);
-  position :fixed;
-  top: 0;
+  position: fixed;
+  top: 0px;
   z-index: 10;
+  }
+.header-logo{
+  float: left;
+  margin: 10px 400px 10px 30px;
+}
+.header-list li{
+  font-size: 18px;
+  float: left;
+  line-height: 70px;
+  padding-right: 50px;
+}
+.main-visual h1{
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 250px;
 }
 
-.logo {
-  width: 124px;
-  margin-top: 20px;
+/* 自己紹介 */
+.first{
+  background-color:rgb(239, 243, 239, 0.959);
 }
-
-.header-left {
+.profile{
+  width: 80%;
+  padding: 0 300px;
+}
+.profile img{
+  border: 5px solid black;
+  border-radius: 50%;
   float: left;
 }
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
+.profile ul{
   float: left;
-  transition: all 0.5s;
+ 
+}
+.profile li{
+ line-height: 60px; 
+ text-align: left;
+}
+.profile .message{
+  line-height: 36px;
 }
 
-.header-right a:hover {
-  background-color: rgba(255,255,255,0.3);
+/* サイト集 */
+.second{
+  background-color: rgb(251, 180, 47)
 }
-
-.lesson-wrapper {
-  height: 580px;
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
-}
-
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
-}
-
-.heading h2 {
-  font-weight: normal;
-}
-
-.lesson {
+.work{
   float: left;
   width: 25%;
-}
-
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 37%;
-  width: 100%;
-  color: white;
-}
-
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 13px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
-}
-
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
   text-align: center;
+  padding-top: 40px;
 }
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0px 7px #1a7940;
+.work img{
+  border: 2px solid black;
 }
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
+.work p{
+  font-size: 16px;
+  padding: 0 30px;
 }
-
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
-.menu-icon {
+/* スキル */
+.third{
+  background-color: #1d809f;
+  height: 150vh;
   color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
+ }
+.skill{
+  float: left;
+  width: 33%;
+  margin-bottom: 15px;
+  padding-top: 80px;
 }
-
-.clear {
-  clear: left;
+.skill .fab{
+  height: 180px;
+  width: 200px;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 150px;
+  color: #1d809f;
+  padding-top: 20px;
 }
-
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
-  .lesson-wrapper {
-    height: 990px;
-  }
-
-  footer {
-    text-align: center;
-  }
+.skill h3 .fas{
+  color: gold;
 }
-
-@media all and (max-width: 750px) {
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-
-  .heading h2 {
-    font-size: 20px;
-  }
+.skill h3{
+  margin: 10px 0 0 0 ;
 }
-
-@media all and (max-width: 670px) {
-  .header-right {
-    display: none;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .top-wrapper .btn {
-    width: 100%;
-  }
-
-  .twitter {
-    margin-top: 10px;
-  }
-
-  .top-wrapper {
-    text-align: left;
-  }
-
-  .top-wrapper h1 {
-    font-size: 24px;
-  }
-
-  .top-wrapper p {
-    font-size: 14px;
-  }
-
-  .lesson {
-    width: 100%;
-  }
-
-  .lesson-wrapper {
-    height: 1700px;
-  }
-
-  .message-wrapper .btn {
-    width: 100%;
-  }
+.skill p{
+  padding: 0 30px;
+  font-size: 16px;
+  margin: 0 0 15px 0 ;
+}
+/* 連絡先 */
+.forth{
+  background-color: aliceblue;
+  height: 25vh;
+}
+.forth .section-title{
+  padding-top: 0px;
+}
+.fa-twitter{
+  font-size: 50px;
 }
