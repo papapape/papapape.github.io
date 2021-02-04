@@ -138,6 +138,32 @@ header{
   font-size: 50px;
 }
 
+@media(max-width:1000px){
+  .first, .second{
+    height: 50vh;
+  }
+  .third{
+    height: 75vh;
+  }
+  .main-visual h1{
+    font-size: 5rem;
+    position: absolute;
+    top: 190px;
+    left: 250px;
+  }
+  .header-list{
+    display:none;
+    }
+    .manu-icon{
+    display:block;
+    color: black;
+    }
+    .profile{
+      text-align: center;
+      width: 100%;
+    }
+
+}
 @media(max-width:670px ){
   .first, .second{
     height: 50vh;
@@ -148,13 +174,19 @@ header{
   .main-visual h1{
     font-size: 5rem;
     position: absolute;
-    top: 13%;
+    top: 190px;
     left: 250px;
   }
-  .header-right{
-  display:none;
-  }
-  .manu-icon{
-  display:block;
-  }
+  .header-list{
+    display:none;
+    }
+    .manu-icon{
+    display:inline-block;
+    }
+    .profile{
+      text-align: center;
+      width: 100%;
+    }
+
 }
+
