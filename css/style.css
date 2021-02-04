@@ -146,23 +146,19 @@ header{
     height: 75vh;
   }
   .main-visual h1{
-    font-size: 5rem;
     position: absolute;
-    top: 190px;
-    left: 250px;
+    top: 150px;
+  }
+  .work{
+    width: 50%;
   }
   .header-list{
-    display:none;
-    }
-    .manu-icon{
-    display:block;
+    display: none;
+  }
+  .menu-icon{
+    display: inline-block;
     color: black;
-    }
-    .profile{
-      text-align: center;
-      width: 100%;
-    }
-
+  }
 }
 @media(max-width:670px ){
   .first, .second{
@@ -172,21 +168,18 @@ header{
     height: 75vh;
   }
   .main-visual h1{
-    font-size: 5rem;
     position: absolute;
-    top: 190px;
-    left: 250px;
+    top: 150px;
+  }
+  .work{
+    width: 50%;
   }
   .header-list{
-    display:none;
-    }
-    .manu-icon{
-    display:inline-block;
-    }
-    .profile{
-      text-align: center;
-      width: 100%;
-    }
-
+    display: none;
+  }
+  .menu-icon{
+    display: inline-block;
+    color: black;
+  }
 }
 
