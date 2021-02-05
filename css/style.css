@@ -147,6 +147,9 @@ header{
     position: absolute;
     top: 150px;
   }
+    .header-logo{
+    margin-right: 150px;
+  }
   .work{
     width: 50%;
   }
@@ -168,6 +171,9 @@ header{
   .main-visual h1{
     position: absolute;
     top: 150px;
+  }
+    .header-logo{
+    margin-right: 150px;
   }
   .work{
     width: 50%;
