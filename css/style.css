@@ -5,11 +5,11 @@ body, h1, h2, h3, p, ul, div{
 }
 .container{
   height: 100vh;
-  padding: 80px 50px 0 50px;
+  padding: 80px 0px 0 0px;
   text-align: center;
 }
 .section-title{
-  padding-top: 130px;
+  padding: 130px 0 40px 0;
   font-size: 3rem;
 }
 a{
@@ -57,21 +57,16 @@ header{
   background-color:rgb(239, 243, 239, 0.959);
 }
 .profile{
-  width: 80%;
-  padding: 0 300px;
+  display: flex;
+ justify-content: center;
 }
 .profile img{
   border: 5px solid black;
   border-radius: 50%;
-  float: left;
-}
-.profile ul{
-  float: left;
- 
 }
 .profile li{
+  text-align: left;
  line-height: 60px; 
- text-align: left;
 }
 .profile .message{
   line-height: 36px;
@@ -81,11 +76,12 @@ header{
 .second{
   background-color: rgb(251, 180, 47)
 }
+.works{
+  display: flex;
+  justify-content:space-around
+}
 .work{
-  float: left;
-  width: 25%;
   text-align: center;
-  padding-top: 40px;
 }
 .work img{
   border: 2px solid black;
@@ -100,11 +96,13 @@ header{
   height: 150vh;
   color: white;
  }
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 .skill{
-  float: left;
   width: 33%;
-  margin-bottom: 15px;
-  padding-top: 80px;
 }
 .skill .fab{
   height: 180px;
@@ -128,7 +126,7 @@ header{
 }
 /* 連絡先 */
 .forth{
-  background-color: aliceblue;
+  background-color: rgb(240, 245, 255);
   height: 25vh;
 }
 .forth .section-title{
@@ -182,4 +180,3 @@ header{
     color: black;
   }
 }
-
